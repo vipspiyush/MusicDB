@@ -26,7 +26,7 @@ Clone this repository to your local machine using the following command:
 ### 2.  Install dependencies
 - Navigate into the project directory and install the necessary dependencies:
 ```
-cd music-website
+cd MusicDB
 npm install
 ```
 ### 3. Set up the Database
