@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Music Website</h1>
+        <nav>
+            <button id="addSongBtn">Add Song</button>
+            <button id="listSongsBtn">List Songs</button>
+        </nav>
+    </header>
+    <main>
+        <section id="addSongSection">
+            <h2>Add a New Song</h2>
+            <form id="addSongForm">
+                <label for="title">Song Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="artist">Artist Name:</label>
+                <input type="text" id="artist" name="artist" required>
+                
+                <label for="album">Album Name:</label>
+                <input type="text" id="album" name="album">
+                
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre" required>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Classical">Classical</option>
+                </select>
+                
+                <button type="submit">Add Song</button>
+            </form>
+        </section>
+
+        <section id="listSongsSection" style="display: none;">
+            <h2>Song List</h2>
+            <table id="songsTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Album</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
