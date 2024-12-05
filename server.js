@@ -10,9 +10,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root', 
-    password: '_Piyush_9603', 
-    database: 'musicdb'
+    user: 'your_mysql_username',
+    password: 'your_mysql_password',
+    database: 'music_db',
 });
 
 db.connect(err => {
